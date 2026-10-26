@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harshit | AI & ML Engineer • Data Analyst • Competitive Programmer</title>
+  <meta name="description" content="Portfolio of Harshit — AI & ML Engineer, Data Analyst, and CSIT student at GL Bajaj Institute of Technology and Management. Top 50 Worldwide in IIT BHU Sangyan Hackathon and LeetCode problem solver.">
+  <meta name="keywords" content="Harshit, Harshit Singh Rajput, AI ML Engineer, Data Analyst, GL Bajaj, GLBITM, Agnes.ai, LeetCode, CSIT, IIT BHU Hackathon">
+  <meta name="author" content="Harshit">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Harshit | AI & ML Engineer • Data Analyst">
+  <meta property="og:description" content="Explore Harshit's personal portfolio, featuring Agnes.ai (Top 50 Worldwide at IIT BHU), AI Interview Simulator, LeetCode solutions, and education at GL Bajaj.">
+  <meta property="og:image" content="assets/images/handsomeAF.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand-logo" aria-label="Harshit - Home">
+        <span class="logo-mark">H</span>
+        <span class="logo-text">Harshit<span class="logo-accent">.ai</span></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Milestones</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action items -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="icon-btn theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle theme">
+          <i class="fa-solid fa-moon dark-icon"></i>
+          <i class="fa-solid fa-sun light-icon"></i>
+        </button>
+
+        <!-- Let's Connect CTA -->
+        <a href="#contact" class="btn btn-primary btn-sm header-cta">
+          <span>Let's Talk</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuBtn" class="icon-btn mobile-menu-btn" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <i class="fa-solid fa-bars menu-bars"></i>
+          <i class="fa-solid fa-xmark menu-close"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Nav -->
+    <div id="mobileNavDrawer" class="mobile-nav-drawer" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#achievements" class="mobile-nav-link">Milestones</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="#contact" class="btn btn-primary btn-full mobile-drawer-cta">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <!-- Availability Pill -->
+          <div class="badge-pill hero-status-pill animate-fade-in">
+            <span class="status-pulse-dot"></span>
+            <span class="pill-text">Open to AI/ML Research & Software Engineering Roles</span>
+          </div>
+
+          <!-- Greeting & Headline -->
+          <h1 class="hero-title animate-fade-in-up">
+            Hi, I'm <span class="gradient-text">Harshit</span>.
+            <br>
+            <span class="typing-container">
+              I am an <span id="typingRole" class="typing-role">AI & ML Engineer</span><span class="typing-cursor">|</span>
+            </span>
+          </h1>
+
+          <p class="hero-description animate-fade-in-up delay-1">
+            B.Tech CSIT Undergrad at <strong>GL Bajaj (Class of 2029)</strong>. Passionate about architecting deepfake detection engines, predictive analytics pipelines, and mastering competitive programming with <strong>120+ LeetCode algorithms</strong> solved.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-actions animate-fade-in-up delay-2">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-shapes"></i>
+              <span>View Projects</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Get in Touch</span>
+            </a>
+          </div>
+
+          <!-- Quick Social Handles Bar -->
+          <div class="hero-social-strip animate-fade-in-up delay-3">
+            <span class="strip-label">Direct Profiles:</span>
+            <div class="social-pills-row">
+              <a href="https://leetcode.com/u/ithakurharshit_/" target="_blank" rel="noopener noreferrer" class="social-pill leetcode-pill" title="LeetCode Profile">
+                <i class="fa-solid fa-code"></i>
+                <span>LeetCode</span>
+                <span class="stat-badge">120+</span>
+              </a>
+              <a href="https://github.com/ithakurhrashit" target="_blank" rel="noopener noreferrer" class="social-pill github-pill" title="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/harshit1647" target="_blank" rel="noopener noreferrer" class="social-pill linkedin-pill" title="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+              </a>
+              <button class="social-pill email-pill" id="copyHeroEmailBtn" title="Copy Email Address" data-email="harshitsinghrajput1647@gmail.com">
+                <i class="fa-regular fa-copy"></i>
+                <span>Copy Email</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Harshit's Portrait Card -->
+        <div class="hero-visual-wrapper animate-fade-in delay-2">
+          <div class="hero-image-card" id="heroPhotoCard">
+            <div class="photo-container">
+              <img src="assets/images/handsomeAF.png" alt="Harshit - AI & ML Engineer and Data Analyst" class="hero-photo" loading="eager">
+              <div class="photo-overlay-glass"></div>
+            </div>
+
+            <!-- Floating Badges on Portrait -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon trophy-icon">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <div class="badge-text">
+                <span class="badge-sub">Sangyan Hackathon</span>
+                <span class="badge-main">Top 50 Worldwide</span>
+                <span class="badge-org">IIT BHU</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon leet-icon">
+                <i class="fa-solid fa-fire"></i>
+              </div>
+              <div class="badge-text">
+                <span class="badge-sub">Problem Solving</span>
+                <span class="badge-main">120+ Solved</span>
+                <span class="badge-org">LeetCode C++ & Python</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-floating-chip">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>GL Bajaj CSIT '29</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metrics Strip Section -->
+    <section class="metrics-strip-section" aria-label="Key Highlights">
+      <div class="container">
+        <div class="metrics-card-grid">
+          <div class="metric-card">
+            <div class="metric-number-wrap">
+              <span class="metric-number" data-target="120">0</span>
+              <span class="metric-symbol">+</span>
+            </div>
+            <div class="metric-info">
+              <h3 class="metric-label">LeetCode Solved</h3>
+              <p class="metric-sub">Focusing on C++, DSA & algorithmic optimization</p>
+            </div>
+          </div>
+
+          <div class="metric-card featured-metric">
+            <div class="metric-number-wrap">
+              <span class="metric-symbol-pre">Top</span>
+              <span class="metric-number" data-target="50">0</span>
+            </div>
+            <div class="metric-info">
+              <h3 class="metric-label">Worldwide Rank</h3>
+              <p class="metric-sub">IIT BHU Sangyan Hackathon with Agnes.ai</p>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-number-wrap">
+              <span class="metric-number" data-target="2029">2029</span>
+            </div>
+            <div class="metric-info">
+              <h3 class="metric-label">B.Tech CSIT Class</h3>
+              <p class="metric-sub">GL Bajaj Institute of Technology & Management</p>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-number-wrap">
+              <span class="metric-number" data-target="100">0</span>
+              <span class="metric-symbol">%</span>
+            </div>
+            <div class="metric-info">
+              <h3 class="metric-label">Builder Mindset</h3>
+              <p class="metric-sub">Bridging theoretical AI with real-world impact</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Driven by Curiosity, Powered by Code</h2>
+          <p class="section-subtitle">
+            An engineering freshman blending deep learning, algorithmic problem-solving, and practical full-stack deployment.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-story-card">
+            <div class="card-icon-header">
+              <div class="icon-avatar">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <span class="card-eyebrow">The Engineering Story</span>
+            </div>
+            <h3 class="story-headline">Turning Data into Intelligence & Defending Digital Trust</h3>
+            <p class="story-text">
+              I am <strong>Harshit</strong>, currently pursuing my B.Tech in <strong>Computer Science and Information Technology (CSIT)</strong> at <strong>GL Bajaj Institute of Technology and Management</strong>. Starting early in my undergraduate journey, I plunged headfirst into the intersection of <strong>Artificial Intelligence, Data Analytics, and Cybersecurity</strong>.
+            </p>
+            <p class="story-text">
+              My flagship project, <strong>Agnes.ai</strong>, was engineered to solve an urgent global problem: detecting deepfakes and deceptive financial trading apps that lure vulnerable investors. Taking this solution to <strong>IIT BHU's prestigious Sangyan Hackathon</strong>, our work was recognized among the <strong>Top 50 teams worldwide</strong>.
+            </p>
+            <p class="story-text">
+              Beyond machine learning models, I believe that high-performance engineering begins with rigorous algorithmic foundations. I spend dedicated hours everyday sharpening my problem-solving skills on <strong>LeetCode</strong> with over 120+ challenges conquered in C++ and Python.
+            </p>
+
+            <div class="about-pillars">
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="pillar-text">
+                  <h4>AI Safety & Security</h4>
+                  <p>Deepfake detection & fraud prevention</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="pillar-text">
+                  <h4>Data Analytics</h4>
+                  <p>Deriving actionable predictive insights</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-microchip"></i></div>
+                <div class="pillar-text">
+                  <h4>Core DSA</h4>
+                  <p>Optimized algorithms & low-latency execution</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LeetCode Interactive Showcase Card -->
+          <div class="leetcode-highlight-card" id="leetcodeCard">
+            <div class="card-glass-header">
+              <div class="leetcode-brand">
+                <div class="leetcode-logo-circle">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div>
+                  <h3 class="leetcode-title">LeetCode Profile</h3>
+                  <a href="https://leetcode.com/u/ithakurharshit_/" target="_blank" rel="noopener noreferrer" class="leetcode-handle">
+                    @ithakurharshit_ <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+              <span class="active-badge"><span class="dot"></span> Active Solver</span>
+            </div>
+
+            <!-- Stats Ring / Circle -->
+            <div class="leetcode-stats-overview">
+              <div class="stat-circle-display">
+                <div class="stat-circle-inner">
+                  <span class="stat-big-number">120+</span>
+                  <span class="stat-small-text">Problems Solved</span>
+                </div>
+              </div>
+
+              <div class="difficulty-bars">
+                <div class="diff-bar-item">
+                  <div class="diff-header">
+                    <span class="diff-name diff-easy">Easy</span>
+                    <span class="diff-count">65+ solved</span>
+                  </div>
+                  <div class="diff-progress-track">
+                    <div class="diff-progress-fill fill-easy" style="width: 75%;"></div>
+                  </div>
+                </div>
+
+                <div class="diff-bar-item">
+                  <div class="diff-header">
+                    <span class="diff-name diff-medium">Medium</span>
+                    <span class="diff-count">48+ solved</span>
+                  </div>
+                  <div class="diff-progress-track">
+                    <div class="diff-progress-fill fill-medium" style="width: 55%;"></div>
+                  </div>
+                </div>
+
+                <div class="diff-bar-item">
+                  <div class="diff-header">
+                    <span class="diff-name diff-hard">Hard</span>
+                    <span class="diff-count">7+ solved</span>
+                  </div>
+                  <div class="diff-progress-track">
+                    <div class="diff-progress-fill fill-hard" style="width: 25%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Core Topics Cloud -->
+            <div class="leetcode-topics-section">
+              <h4 class="topics-title">Strong Algorithmic Areas</h4>
+              <div class="topics-chip-grid">
+                <span class="topic-chip"><i class="fa-solid fa-check"></i> Arrays & Vectors</span>
+                <span class="topic-chip"><i class="fa-solid fa-check"></i> Two Pointers & Sliding Window</span>
+                <span class="topic-chip"><i class="fa-solid fa-check"></i> Hash Maps & Sets</span>
+                <span class="topic-chip"><i class="fa-solid fa-check"></i> Binary Search</span>
+                <span class="topic-chip"><i class="fa-solid fa-check"></i> Linked Lists & Stacks</span>
+                <span class="topic-chip"><i class="fa-solid fa-check"></i> Recursion & Backtracking</span>
+                <span class="topic-chip"><i class="fa-solid fa-check"></i> Trees & Graphs Basics</span>
+              </div>
+            </div>
+
+            <div class="card-footer-cta">
+              <a href="https://leetcode.com/u/ithakurharshit_/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-full">
+                <span>Inspect Live LeetCode Profile</span>
+                <i class="fa-solid fa-external-link"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education & Foundations</h2>
+          <p class="section-subtitle">
+            Building strong theoretical computer science principles alongside real-world technological innovations.
+          </p>
+        </div>
+
+        <div class="education-card-wrapper">
+          <div class="education-card">
+            <div class="edu-card-left">
+              <div class="college-crest-icon">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+              <div class="edu-timeline-badge">2025 — 2029</div>
+            </div>
+
+            <div class="edu-card-content">
+              <div class="edu-title-row">
+                <div>
+                  <h3 class="college-name">GL Bajaj Institute of Technology and Management</h3>
+                  <p class="college-location"><i class="fa-solid fa-location-dot"></i> Greater Noida, Uttar Pradesh, India</p>
+                </div>
+                <span class="degree-badge">B.Tech Undergraduate</span>
+              </div>
+
+              <div class="edu-degree-details">
+                <h4 class="degree-title">Bachelor of Technology in Computer Science & Information Technology (CSIT)</h4>
+                <p class="degree-desc">
+                  Curriculum focused on Object-Oriented Programming with C++, Data Structures & Algorithms, Computer Architecture, Operating Systems, Database Management Systems, and Artificial Intelligence foundations.
+                </p>
+              </div>
+
+              <div class="edu-highlights-list">
+                <div class="edu-highlight-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Active member of collegiate coding and technical hackathon circles.</span>
+                </div>
+                <div class="edu-highlight-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Spearheaded first-year technical projects in AI simulator integration & financial fraud detection.</span>
+                </div>
+                <div class="edu-highlight-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Consistent top-tier focus on competitive coding, logic formulation, and analytical reasoning.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Technical Toolbox</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">
+            Curated stacks for building intelligent machine learning systems, analyzing large datasets, and writing performant code.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Category 1: AI & ML -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon cat-icon-ai">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <div>
+                <h3 class="cat-title">AI & Machine Learning</h3>
+                <p class="cat-subtitle">Deep learning, vision & NLP systems</p>
+              </div>
+            </div>
+
+            <div class="skill-pill-list">
+              <div class="skill-pill">
+                <span class="pill-name">Deepfake Detection</span>
+                <span class="pill-level">Specialty</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">Computer Vision</span>
+                <span class="pill-level">Advanced</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">PyTorch / TensorFlow</span>
+                <span class="pill-level">Core</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">OpenCV</span>
+                <span class="pill-level">Hands-on</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">Scikit-Learn</span>
+                <span class="pill-level">ML Pipelines</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">LLM & Prompt Integration</span>
+                <span class="pill-level">Simulators</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 2: Data Analytics -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon cat-icon-data">
+                <i class="fa-solid fa-chart-pie"></i>
+              </div>
+              <div>
+                <h3 class="cat-title">Data Analytics & Insights</h3>
+                <p class="cat-subtitle">Exploratory analysis & visualizations</p>
+              </div>
+            </div>
+
+            <div class="skill-pill-list">
+              <div class="skill-pill">
+                <span class="pill-name">Python for Data Science</span>
+                <span class="pill-level">Expert</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">Pandas & NumPy</span>
+                <span class="pill-level">Core</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">Exploratory Data Analysis (EDA)</span>
+                <span class="pill-level">Proficient</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">Data Visualization (Matplotlib, Seaborn)</span>
+                <span class="pill-level">Proficient</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">Feature Engineering</span>
+                <span class="pill-level">Hands-on</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">Statistical Hypothesis Testing</span>
+                <span class="pill-level">Analytical</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 3: Programming & DSA -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon cat-icon-code">
+                <i class="fa-solid fa-terminal"></i>
+              </div>
+              <div>
+                <h3 class="cat-title">Languages & Algorithms</h3>
+                <p class="cat-subtitle">Problem solving & low-level foundations</p>
+              </div>
+            </div>
+
+            <div class="skill-pill-list">
+              <div class="skill-pill">
+                <span class="pill-name">C++ (STL & OOP)</span>
+                <span class="pill-level">Primary</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">Python 3</span>
+                <span class="pill-level">Primary</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">Data Structures & Algorithms</span>
+                <span class="pill-level">120+ Solved</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">SQL / Relational Queries</span>
+                <span class="pill-level">Database</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">Time & Space Complexity</span>
+                <span class="pill-level">Optimization</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">JavaScript basics</span>
+                <span class="pill-level">Web UI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 4: Tools & Deployment -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon cat-icon-tools">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <div>
+                <h3 class="cat-title">Tools & Frameworks</h3>
+                <p class="cat-subtitle">Development ecosystem & APIs</p>
+              </div>
+            </div>
+
+            <div class="skill-pill-list">
+              <div class="skill-pill">
+                <span class="pill-name">Git & GitHub</span>
+                <span class="pill-level">Version Control</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">FastAPI / Flask</span>
+                <span class="pill-level">RESTful APIs</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">Streamlit</span>
+                <span class="pill-level">Rapid Prototyping</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">VS Code & Linux CLI</span>
+                <span class="pill-level">Daily Driver</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">Jupyter Notebooks</span>
+                <span class="pill-level">Experiments</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-name">Postman</span>
+                <span class="pill-level">API Testing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Engineered to Solve Real Problems</h2>
+          <p class="section-subtitle">
+            From fighting financial cybercrime with computer vision to simulating dynamic AI interviews.
+          </p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="aiml">AI & Deep Learning</button>
+          <button class="filter-btn" data-filter="fintech">FinTech & Security</button>
+          <button class="filter-btn" data-filter="analytics">Data Analytics & DSA</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1: Agnes.ai -->
+          <article class="project-card featured-project" data-category="aiml fintech">
+            <div class="project-badge-ribbon">
+              <i class="fa-solid fa-trophy"></i>
+              <span>IIT BHU Sangyan Top 50</span>
+            </div>
+
+            <div class="project-media-wrap">
+              <img src="assets/images/agnes-ai.jpg" alt="Agnes.ai Financial Fraud & Deepfake Detection Platform" class="project-media-img" loading="lazy">
+              <div class="media-hover-overlay">
+                <button class="btn btn-primary btn-sm view-details-btn" data-project="agnes">
+                  <i class="fa-solid fa-eye"></i>
+                  <span>Inspect System Architecture</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tags-row">
+                <span class="tech-tag tag-primary">Computer Vision</span>
+                <span class="tech-tag">Deepfake Defense</span>
+                <span class="tech-tag">Fraud Analytics</span>
+                <span class="tech-tag">FastAPI</span>
+              </div>
+
+              <h3 class="project-title">
+                Agnes.ai — Financial Fraud & Deepfake Detection Platform
+              </h3>
+
+              <p class="project-summary">
+                An enterprise-oriented cybersecurity and intelligence solution built to shield everyday investors. Detects synthetic media deepfakes, rogue trading applications, and fraudulent clone platforms before monetary loss occurs.
+              </p>
+
+              <div class="project-highlights-grid">
+                <div class="highlight-item">
+                  <span class="hl-label">Hackathon Milestone</span>
+                  <span class="hl-value">Top 50 Worldwide @ Sangyan (IIT BHU)</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hl-label">Core Pipeline</span>
+                  <span class="hl-value">Biometric facial verification & APK risk scoring</span>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-secondary btn-sm view-details-btn" data-project="agnes">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>Deep Dive Case Study</span>
+                </button>
+                <div class="project-links-group">
+                  <a href="https://github.com/ithakurhrashit" target="_blank" rel="noopener noreferrer" class="icon-link-btn" title="View Source on GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="#contact" class="icon-link-btn" title="Discuss Agnes.ai Implementation">
+                    <i class="fa-solid fa-comments"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: AI Interview Simulator -->
+          <article class="project-card" data-category="aiml">
+            <div class="project-badge-ribbon ribbon-tech">
+              <i class="fa-solid fa-robot"></i>
+              <span>First-Year Mini Project</span>
+            </div>
+
+            <div class="project-media-wrap">
+              <img src="assets/images/interview-simulator.jpg" alt="AI Interview Simulator Dashboard" class="project-media-img" loading="lazy">
+              <div class="media-hover-overlay">
+                <button class="btn btn-primary btn-sm view-details-btn" data-project="interview">
+                  <i class="fa-solid fa-eye"></i>
+                  <span>Inspect Simulator Workflow</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tags-row">
+                <span class="tech-tag tag-primary">NLP / LLM</span>
+                <span class="tech-tag">Python Backend</span>
+                <span class="tech-tag">Speech-to-Text</span>
+                <span class="tech-tag">Dynamic Scoring</span>
+              </div>
+
+              <h3 class="project-title">
+                AI Interview Simulator & Candidate Evaluation Engine
+              </h3>
+
+              <p class="project-summary">
+                Engineered during my first year to pioneer backend architecture and seamless AI integration. Conducts dynamic technical mock interviews, transcribes candidate responses, and provides comprehensive metrics on clarity, structure, and problem-solving depth.
+              </p>
+
+              <div class="project-highlights-grid">
+                <div class="highlight-item">
+                  <span class="hl-label">Skills Honed</span>
+                  <span class="hl-value">Backend API design & LLM prompt engineering</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hl-label">Feedback Mechanism</span>
+                  <span class="hl-value">Radar chart breakdown & actionable critiques</span>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-secondary btn-sm view-details-btn" data-project="interview">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>Deep Dive Case Study</span>
+                </button>
+                <div class="project-links-group">
+                  <a href="https://github.com/ithakurhrashit" target="_blank" rel="noopener noreferrer" class="icon-link-btn" title="View Source on GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="#contact" class="icon-link-btn" title="Discuss Interview AI">
+                    <i class="fa-solid fa-comments"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: DataPulse & AlgoSphere -->
+          <article class="project-card" data-category="analytics">
+            <div class="project-badge-ribbon ribbon-algo">
+              <i class="fa-solid fa-chart-line"></i>
+              <span>Analytics & DSA</span>
+            </div>
+
+            <div class="project-media-wrap">
+              <img src="assets/images/datapulse-analytics.jpg" alt="DataPulse Algorithmic Performance and Analytics Suite" class="project-media-img" loading="lazy">
+              <div class="media-hover-overlay">
+                <button class="btn btn-primary btn-sm view-details-btn" data-project="datapulse">
+                  <i class="fa-solid fa-eye"></i>
+                  <span>Inspect Analytics Suite</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tags-row">
+                <span class="tech-tag tag-primary">Data Analytics</span>
+                <span class="tech-tag">Python & C++</span>
+                <span class="tech-tag">Pandas / NumPy</span>
+                <span class="tech-tag">DSA Benchmarks</span>
+              </div>
+
+              <h3 class="project-title">
+                DataPulse — Algorithmic Performance & Predictive Analytics
+              </h3>
+
+              <p class="project-summary">
+                A modular data visualization and algorithmic benchmark harness. Combines exploratory data analysis (EDA) techniques with execution-time and space complexity profiling for 120+ standard data structures & algorithms.
+              </p>
+
+              <div class="project-highlights-grid">
+                <div class="highlight-item">
+                  <span class="hl-label">Data Capability</span>
+                  <span class="hl-value">Statistical profiling, outlier detection & trend lines</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hl-label">LeetCode Connect</span>
+                  <span class="hl-value">Documented C++ time-efficient patterns</span>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-secondary btn-sm view-details-btn" data-project="datapulse">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>Deep Dive Case Study</span>
+                </button>
+                <div class="project-links-group">
+                  <a href="https://leetcode.com/u/ithakurharshit_/" target="_blank" rel="noopener noreferrer" class="icon-link-btn" title="View LeetCode Profiling">
+                    <i class="fa-solid fa-code"></i>
+                  </a>
+                  <a href="https://github.com/ithakurhrashit" target="_blank" rel="noopener noreferrer" class="icon-link-btn" title="View Source on GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements & Milestones Section -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Key Milestones</span>
+          <h2 class="section-title">Recognitions & Competitive Highlights</h2>
+          <p class="section-subtitle">
+            Demonstrating grit, competitive consistency, and the capability to perform under pressure.
+          </p>
+        </div>
+
+        <div class="milestones-timeline">
+          <!-- Item 1 -->
+          <div class="timeline-card">
+            <div class="timeline-indicator">
+              <div class="indicator-icon"><i class="fa-solid fa-award"></i></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-badge">Global Hackathon Distinction</div>
+              <h3 class="timeline-title">Top 50 Worldwide — Sangyan Hackathon @ IIT BHU</h3>
+              <p class="timeline-org">Indian Institute of Technology (BHU), Varanasi</p>
+              <p class="timeline-text">
+                Competed against hundreds of global collegiate teams and tech innovators with <strong>Agnes.ai</strong>. Built a functioning prototype addressing financial fraud, fake investing apps, and biometric deepfake manipulation, earning a prestigious rank in the top 50 globally.
+              </p>
+              <div class="timeline-meta-chips">
+                <span><i class="fa-solid fa-check"></i> Deepfake Defense</span>
+                <span><i class="fa-solid fa-check"></i> Team Leadership</span>
+                <span><i class="fa-solid fa-check"></i> Prototype Deployment</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-card">
+            <div class="timeline-indicator">
+              <div class="indicator-icon"><i class="fa-solid fa-fire"></i></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-badge">Competitive Programming</div>
+              <h3 class="timeline-title">120+ LeetCode Algorithms Solved & Daily Consistency</h3>
+              <p class="timeline-org">Profile: ithakurharshit_ • C++ and Python</p>
+              <p class="timeline-text">
+                Maintained a disciplined problem-solving routine covering two pointers, sliding window, tree traversals, binary search patterns, and dynamic programming fundamentals. Actively training for competitive coding leagues and national contests.
+              </p>
+              <div class="timeline-meta-chips">
+                <span><i class="fa-solid fa-check"></i> C++ STL Mastery</span>
+                <span><i class="fa-solid fa-check"></i> Algorithmic Complexity</span>
+                <span><i class="fa-solid fa-check"></i> Consistent Streak</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-card">
+            <div class="timeline-indicator">
+              <div class="indicator-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-badge">Undergraduate Momentum</div>
+              <h3 class="timeline-title">First-Year Technical Mini-Project Leadership</h3>
+              <p class="timeline-org">GL Bajaj Institute of Technology & Management</p>
+              <p class="timeline-text">
+                Developed the <strong>AI Interview Simulator</strong> right in freshman year, mastering backend architecture, asynchronous API endpoints, and dynamic LLM prompt pipelining well ahead of conventional collegiate timelines.
+              </p>
+              <div class="timeline-meta-chips">
+                <span><i class="fa-solid fa-check"></i> Full-Stack AI Integration</span>
+                <span><i class="fa-solid fa-check"></i> System Architecture</span>
+                <span><i class="fa-solid fa-check"></i> Fast Learner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let's Build Something Exceptional</h2>
+          <p class="section-subtitle">
+            Whether you are looking for an AI/ML intern, a competitive problem solver, or want to collaborate on innovative projects.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Card -->
+          <div class="contact-info-card">
+            <div class="contact-info-header">
+              <div class="avatar-small">
+                <img src="assets/images/handsomeAF.png" alt="Harshit profile thumbnail">
+              </div>
+              <div>
+                <h3 class="contact-card-name">Harshit</h3>
+                <p class="contact-card-role">AI & ML Engineer • Data Analyst</p>
+              </div>
+            </div>
+
+            <p class="contact-pitch">
+              I am actively seeking software engineering internships, AI/ML research collaborations, and open-source opportunities. Reach out anytime!
+            </p>
+
+            <div class="contact-channels-list">
+              <!-- Direct Email -->
+              <div class="contact-channel-item">
+                <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="channel-details">
+                  <span class="channel-label">Email Me</span>
+                  <a href="mailto:harshitsinghrajput1647@gmail.com" class="channel-value">harshitsinghrajput1647@gmail.com</a>
+                </div>
+                <button class="copy-action-btn" id="copyContactEmailBtn" title="Copy email address" data-email="harshitsinghrajput1647@gmail.com">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <!-- College Location -->
+              <div class="contact-channel-item">
+                <div class="channel-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="channel-details">
+                  <span class="channel-label">Campus & Location</span>
+                  <span class="channel-value">GL Bajaj (GLBITM), Greater Noida, India</span>
+                </div>
+              </div>
+
+              <!-- LeetCode -->
+              <div class="contact-channel-item">
+                <div class="channel-icon"><i class="fa-solid fa-code"></i></div>
+                <div class="channel-details">
+                  <span class="channel-label">LeetCode Profile</span>
+                  <a href="https://leetcode.com/u/ithakurharshit_/" target="_blank" rel="noopener noreferrer" class="channel-value">leetcode.com/u/ithakurharshit_/</a>
+                </div>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-channel-item">
+                <div class="channel-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="channel-details">
+                  <span class="channel-label">LinkedIn Profile</span>
+                  <a href="https://www.linkedin.com/in/harshit1647" target="_blank" rel="noopener noreferrer" class="channel-value">linkedin.com/in/harshit1647</a>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-channel-item">
+                <div class="channel-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="channel-details">
+                  <span class="channel-label">GitHub Profile</span>
+                  <a href="https://github.com/ithakurhrashit" target="_blank" rel="noopener noreferrer" class="channel-value">github.com/ithakurhrashit</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social badges row -->
+            <div class="contact-social-row">
+              <a href="https://leetcode.com/u/ithakurharshit_/" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="LeetCode Profile" aria-label="LeetCode">
+                <i class="fa-solid fa-code"></i>
+              </a>
+              <a href="https://github.com/ithakurhrashit" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="GitHub Profile" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/harshit1647" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="LinkedIn Profile" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:harshitsinghrajput1647@gmail.com" class="social-circle-link" title="Send Direct Email" aria-label="Email">
+                <i class="fa-solid fa-paper-plane"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-card">
+            <h3 class="form-title">Send a Direct Message</h3>
+            <p class="form-subtitle">Fill out the quick note below to start a conversation.</p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="senderName" class="form-label">Your Name <span class="required">*</span></label>
+                  <input type="text" id="senderName" class="form-input" placeholder="e.g. Alex Morgan" required>
+                  <span class="form-error-msg" id="nameError">Please enter your name</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderEmail" class="form-label">Your Email <span class="required">*</span></label>
+                  <input type="email" id="senderEmail" class="form-input" placeholder="e.g. alex@company.com" required>
+                  <span class="form-error-msg" id="emailError">Please enter a valid email address</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject <span class="required">*</span></label>
+                <input type="text" id="subject" class="form-input" placeholder="e.g. AI/ML Internship Opportunity / Collaboration" required>
+                <span class="form-error-msg" id="subjectError">Please provide a subject</span>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message <span class="required">*</span></label>
+                <textarea id="message" rows="5" class="form-textarea" placeholder="Hi Harshit, I saw your work on Agnes.ai and LeetCode..." required></textarea>
+                <span class="form-error-msg" id="messageError">Please type your message</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full submit-btn" id="submitFormBtn">
+                <span class="btn-text">Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Project Deep-Dive Modal -->
+  <div id="projectModal" class="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-content" id="modalContent">
+        <!-- Dynamically injected project case study content -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTopBtn" class="scroll-top-btn" aria-label="Scroll back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">H</span>
+        <span class="footer-name">Harshit</span>
+        <span class="footer-sep">•</span>
+        <span class="footer-sub">B.Tech CSIT '29 @ GL Bajaj</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://leetcode.com/u/ithakurharshit_/" target="_blank" rel="noopener noreferrer">LeetCode (120+)</a>
+        <a href="https://www.linkedin.com/in/harshit1647" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/ithakurhrashit" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:harshitsinghrajput1647@gmail.com">Email</a>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; <span id="currentYear"></span> Harshit. Designed & engineered with clean Apple aesthetics.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
